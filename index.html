@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#210f20">
+  <meta name="description" content="Seven little reasons, one very special person. A love note for Amit.">
+  <title>Seven Little Reasons ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="star-field" id="starField" aria-hidden="true"></div>
+  <div class="ambient-glow glow-one" aria-hidden="true"></div>
+  <div class="ambient-glow glow-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Seven Little Reasons home"><span class="wordmark-mark">♡</span> a little piece of us</a>
+  
+  </header>
+
+  <main>
+    <!-- Opening scene -->
+    <section class="scene scene-cover is-active" id="cover" aria-labelledby="coverTitle">
+      <div class="cover-orbit orbit-a"></div><div class="cover-orbit orbit-b"></div>
+      <div class="moon-wrap" aria-hidden="true"><span class="moon">☾</span><span class="moon-spark">✦</span></div>
+      <p class="eyebrow reveal">A small universe, made for you</p>
+      <h1 id="coverTitle" class="cover-title reveal delay-1">Seven little<br><em>reasons</em></h1>
+      <p class="cover-subtitle reveal delay-2">and a thousand things I still want to tell you.</p>
+      <div class="cover-art reveal delay-2" aria-hidden="true">
+        <div class="cityline"></div>
+        <div class="hill hill-back"></div><div class="hill hill-front"></div>
+        <div class="tiny-person person-one"><span class="head"></span><span class="body"></span></div>
+        <div class="tiny-person person-two"><span class="head"></span><span class="body"></span></div>
+        <span class="art-heart art-heart-one">♡</span><span class="art-heart art-heart-two">✧</span>
+      </div>
+      <div class="cover-bottom reveal delay-3">
+        <p class="made-for">for babyy, from your madam jii <span>♡</span></p>
+        <button class="primary-button" id="openLetter" type="button"><span>Open your little letter</span><b>↗</b></button>
+        <p class="micro-copy">take your time. this is just for you.</p>
+      </div>
+    </section>
+
+    <!-- A brief personal prologue -->
+    <section class="scene prologue" id="prologue" aria-labelledby="prologueTitle" hidden>
+      <div class="section-index">A NOTE BEFORE THE NOTES <span>00 — 07</span></div>
+      <div class="prologue-paper paper-surface">
+        <span class="paper-tape tape-top"></span>
+        <div class="postmark">MADE WITH<br>LOVE <span>♡</span></div>
+        <p class="script-kicker">dear sirr jii,</p>
+        <h2 id="prologueTitle">Somehow, miles<br>became <em>memories.</em></h2>
+        <div class="prologue-copy">
+          <p>Somehow, miles become memories, and you become a part of me in ways words could never explain.  You’re in my little smiles, my quiet prayers, my random thoughts, and all the moments when I wish you were right here beside me. </p>
+          <p>Sometimes, I wish I could turn every call into a hug, every “I miss you” into a moment in your arms, and every little dream of us into reality. Until then, I’ll cherish every little thing that brings me closer to you, because even miles away, you feel like home to me.</p>
+          <p>And someday, I hope we’ll look back at all these days and smile, knowing that every mile was worth it because it led me to you. You’re not just someone I love, you’re someone I want all my tomorrows with. </p>
+        </div>
+        <div class="letter-signoff">yours, <span>madam jii ♡</span></div>
+      </div>
+      <button class="text-button" id="startReasons" type="button">let me tell you →</button>
+    </section>
+
+    <!-- Reasons are rendered by JS -->
+    <section class="scene reasons-scene" id="reasonsScene" hidden aria-labelledby="reasonTitle">
+      <div class="section-index"><span>SEVEN LITTLE REASONS</span><span id="progressLabel">01 / 07</span></div>
+      <div class="reason-layout">
+        <aside class="side-note">
+          <span class="side-note-star">✳</span>
+          <p>not grand gestures.<br>just the little things<br>that feel like <em>you.</em></p>
+          <div class="progress-track"><span id="progressFill"></span></div>
+          <span class="side-note-small">OUR LITTLE COLLECTION</span>
+        </aside>
+        <article class="reason-card paper-surface" id="reasonCard" aria-live="polite">
+          <span class="paper-tape tape-corner"></span>
+          <div class="card-topline"><span id="cardNumber">NO. 01</span><span>♡</span></div>
+          <div class="scrap-illustration" id="reasonIllustration" aria-hidden="true">
+            <div class="scrap-halo"></div><div class="scrap-symbol">♡</div>
+            <span class="scrap-doodle doodle-a">✧</span><span class="scrap-doodle doodle-b">♡</span>
+          </div>
+          <p class="reason-kicker" id="reasonKicker">THE WAY YOU...</p>
+          <h2 id="reasonTitle">Make distance feel softer</h2>
+          <div class="hand-line"><span>♡</span></div>
+          <p class="reason-copy" id="reasonCopy"></p>
+          <div class="card-foot"><span class="tiny-stamp">A NOTE<br>FOR YOU</span><button class="next-button" id="nextReason" type="button"><span>Next little reason</span><b>→</b></button></div>
+          <span class="card-corner-heart">♥</span>
+        </article>
+      </div>
+      <div class="mobile-progress" aria-hidden="true"><span id="mobileProgress"></span></div>
+    </section>
+
+    <!-- Finale -->
+    <section class="scene finale" id="finale" hidden aria-labelledby="finalTitle">
+      <div class="final-stars" aria-hidden="true">✦　·　♡　·　✧</div>
+      <p class="eyebrow">and after all seven...</p>
+      <div class="final-heart-wrap" aria-hidden="true"><span class="final-heart">♡</span><span class="heart-ring"></span></div>
+      <h2 id="finalTitle">It was always<br><em>you.</em></h2>
+      <p class="final-lede">Happy 7th month anniversary, sirr jii.</p>
+      <div class="final-letter paper-surface">
+        <span class="paper-tape tape-final"></span>
+        <p>Happy 7 months of us, my love. Seven months of having you in my life, seven months of loving you a little more with each passing day, and seven months of having someone who means so much to my heart. I don't think you fully realise how special you are to me and how much happiness just having you in my life brings me. You have become such a beautiful part of my world, someone I want beside me through the happiest days and the not-so-good ones, too. I love you for who you are, for all the little things that make you you, and for the way my heart feels when it comes to you. I know we still have so much to learn about each other, so many memories to make, so many little dreams to turn into reality, and so much love left to give. I wish for us to keep growing together, understanding each other a little better, choosing each other even on difficult days, and never forgetting why we became us in the first place.</p>
+        <p>I hope one day we look back at these seven months with the sweetest smiles, knowing they were only the beginning of something so beautiful. If I could go back and choose all over again, I'd still choose you, sirr jii, with the same heart and even more love. You're someone I don't just want in my today, but in all the tomorrows I'm lucky enough to have. Happy 7 months, my favourite person. I love you more than these little words could ever tell you, and I'm so grateful that it's you. Always you.</p>
+        <p class="final-signature">I love you,my lovee . <span>— your bubu ♡</span></p>
+      </div>
+      <button class="primary-button restart-button" id="replay" type="button"><span>Read our little story again</span><b>↺</b></button>
+      <p class="final-footnote">made slowly, with love. just for you.</p>
+      <div class="celebration-layer" id="celebrationLayer" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>SEVEN MONTHS TOGETHER</span><span>♡</span><span>AND STILL, MY FAVOURITE HELLO</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
